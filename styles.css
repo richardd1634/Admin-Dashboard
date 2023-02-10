@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.sidebar-container {
+  border: 1px solid blue;
+  grid-row: 1 / 3;
+}
+
+.header-container {
+  border: 1px solid red;
+}
+
+.main-content-container {
+  border: 1px solid green;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.cards-container {
+  border: 1px solid orange;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.announcements-container {
+  border: 1px solid pink;
+}
+
+.trending-container {
+  border: 1px solid lightblue;
+}
